@@ -17,6 +17,7 @@ _REPO_ROOT = Path(__file__).resolve().parent.parent
 # on the vllm 0.24 image. Restore when the image ships vllm >= 0.33.
 # An ignore is applied only while its file still exists; if the test is
 # renamed or removed, the entry is skipped instead of failing collection.
+# Tracking issue: https://github.com/flagos-ai/vllm-plugin-FL/issues/760
 ENV_DRIFT_IGNORES = [
     "coverage_tests/functional/qwen3_8/test_cov_mtp.py",
 ]
